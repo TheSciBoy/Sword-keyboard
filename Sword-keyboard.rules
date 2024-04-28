@@ -1,7 +1,7 @@
 
 (rules PCB Sword-keyboard
   (snap_angle 
-    fortyfive_degree
+    ninety_degree
   )
   (autoroute_settings
     (fanout off)
@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 1218)
+    (start_pass_no 5)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -29,8 +29,9 @@
     (width 200.0)
     (clearance 200.0)
     (clearance 100.0 (type smd_to_turn_gap))
-    (clearance 50.0 (type smd))
+    (clearance 200.0 (type smd))
     (clearance 200.0 (type "kicad_default"))
+    (clearance 200.0 (type kicad))
   )
   (padstack "Via[0-1]_600:300_um"
     (shape
